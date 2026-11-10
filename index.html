@@ -4,22 +4,129 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sleepy Owl Apps</title>
-<meta name="description" content="Sleepy Owl Apps: small, free Android apps. Home of Volume Box, a volume booster, equalizer and music player.">
+<meta name="description" content="Sleepy Owl Apps makes small, free Android apps with no sign-up. Home of Volume Box, a volume booster, equalizer and music player.">
+<meta property="og:title" content="Sleepy Owl Apps">
+<meta property="og:description" content="Small, free Android apps. No sign-up, no clutter.">
+<link rel="icon" href="assets/owl.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <h1>Sleepy Owl Apps</h1>
-  <p class="muted">Small, free Android apps. No sign-up.</p>
 
-  <section class="card">
-    <h2>Volume Box</h2>
-    <p>Volume booster up to 400%, 5-band equalizer with presets, Bass Boost, and a music player with radio and podcasts. Free, with no account.</p>
-    <p><a href="privacy-policy.html">Privacy policy</a></p>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/owl.svg" alt="">Sleepy Owl Apps</a>
+    <nav class="nav">
+      <a href="#apps">Apps</a>
+      <a href="#about" class="nav-optional">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <span class="eyebrow"><span class="dot"></span>Independent Android apps</span>
+    <h1>Small apps, made <span class="gradient-text">after dark.</span></h1>
+    <p class="lead">Sleepy Owl Apps builds simple, focused Android apps that are free to use.
+      No accounts, no sign-up, no clutter. Just open the app and get on with your day (or night).</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#apps">See the apps</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <!-- ============================================================ APPS
+       To add an app: copy the Volume Box card below, change the folder name,
+       icon, text and accent colour, and create a matching folder (see
+       README.md in this repository). -->
+  <section id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Our apps</h2>
+        <p>Each app does one thing well. More are on the way.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card app-card" style="--card-accent:#00e5ff">
+          <div class="app-top">
+            <img src="volumebox/icon.svg" alt="Volume Box icon">
+            <div>
+              <h3>Volume Box</h3>
+              <p class="muted">Volume booster, equalizer &amp; music player</p>
+            </div>
+          </div>
+          <p class="muted">Boost quiet audio up to 400%, shape the sound with a 5-band EQ and Bass Boost,
+            and play your music, radio and podcasts in one place.</p>
+          <div class="tags">
+            <span class="tag">Free</span>
+            <span class="tag">No sign-up</span>
+            <span class="tag">Android 8+</span>
+          </div>
+          <div class="links">
+            <a class="btn btn-primary" href="volumebox/">Learn more</a>
+            <a class="btn" href="volumebox/privacy-policy.html">Privacy</a>
+          </div>
+        </article>
+
+        <article class="card app-card soon" aria-label="More apps coming soon">
+          <div class="moon" aria-hidden="true"></div>
+          <h3>More apps coming</h3>
+          <p class="muted">The owl is working on it.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <h2>Contact</h2>
-  <p><a href="mailto:[YOUR CONTACT EMAIL]">[YOUR CONTACT EMAIL]</a></p>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How we build</h2>
+        <p>The same promises apply to every Sleepy Owl app.</p>
+      </div>
+      <div class="grid">
+        <div class="card feature">
+          <div class="icon" aria-hidden="true">✦</div>
+          <h3>Free to use</h3>
+          <p>Our apps are free. Where there are ads, they're kept small, and anything extra is
+            unlocked with an optional video, never a payment.</p>
+        </div>
+        <div class="card feature">
+          <div class="icon" aria-hidden="true">◐</div>
+          <h3>No accounts</h3>
+          <p>No sign-up and no profiles. Your settings and lists stay on your phone.</p>
+        </div>
+        <div class="card feature">
+          <div class="icon" aria-hidden="true">⌘</div>
+          <h3>Privacy first</h3>
+          <p>We don't run servers that collect your data, and we never sell it. Each app has a
+            plain-English privacy policy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="card">
+        <h2>Say hello</h2>
+        <p>Found a bug, have an idea, or want to say thanks? We read every message.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:sleepyowlapps8@proton.me">sleepyowlapps8@proton.me</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Sleepy Owl Apps</span>
+    <span><a href="volumebox/">Volume Box</a> · <a href="volumebox/privacy-policy.html">Volume Box privacy</a></span>
+  </div>
+</footer>
+
 </body>
 </html>
